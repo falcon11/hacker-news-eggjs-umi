@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import { IRouteComponentProps } from 'umi';
+import { IRouteComponentProps, Helmet } from 'umi';
 
 export default function Layout({
   children,
@@ -11,6 +11,9 @@ export default function Layout({
 }: IRouteComponentProps) {
   return (
     <>
+      <Helmet>
+        <title>Hacker News</title>
+      </Helmet>
       <Header />
       {children}
       <Footer />

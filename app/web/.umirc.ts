@@ -18,4 +18,5 @@ export default defineConfig({
     fileName: '../../config/manifest.json',
     publicPath: '',
   },
+  title: false
 });
