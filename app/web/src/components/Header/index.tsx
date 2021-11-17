@@ -4,7 +4,9 @@ import styles from './index.less';
 const Header: FC = () => {
   return (
     <div className={styles.header}>
-      <b className={styles.title}>Hacker News</b>
+      <a href="/">
+        <b className={styles.title}>Hacker News</b>
+      </a>
     </div>
   );
 };

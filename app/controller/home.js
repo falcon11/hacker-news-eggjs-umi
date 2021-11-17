@@ -19,6 +19,7 @@ class HomeController extends Controller {
       path: ctx.url,
       getInitialPropsCtx: {
         service: ctx.service,
+        pageSize: this.config.news.pageSize,
       },
       htmlTemplate,
     });

@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { IRouteComponentProps } from 'umi';
 
@@ -12,6 +13,7 @@ export default function Layout({
     <>
       <Header />
       {children}
+      <Footer />
     </>
   );
 }

@@ -19,6 +19,7 @@ $ open http://localhost:7001/
 ### Deploy
 
 ```bash
+$ npm run build
 $ npm start
 $ npm stop
 ```

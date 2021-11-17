@@ -44,6 +44,7 @@
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-hacker-news-eggjs-umi",
     "stop": "egg-scripts stop --title=egg-server-hacker-news-eggjs-umi",
+    "build": "npm run build-web",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
