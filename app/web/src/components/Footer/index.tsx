@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={styles.footer}>
       <hr className={styles.divider} />
       <span>
-        Power By <a href={'https://eggjs.org/'}>Eggjs</a> +{' '}
+        Powered By <a href={'https://eggjs.org/'}>Eggjs</a> +{' '}
         <a href={'https://umijs.org/'}>Umi</a>
       </span>
       <br />
