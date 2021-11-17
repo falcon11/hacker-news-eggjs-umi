@@ -51,7 +51,7 @@
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
-    "ci": "npm run lint && npm run cov",
+    "ci": "npm run build && npm run lint && npm run cov",
     "autod": "autod",
     "start-web": "cross-env APP_ROOT=app/web umi dev",
     "build-web": "cross-env APP_ROOT=app/web umi build",
