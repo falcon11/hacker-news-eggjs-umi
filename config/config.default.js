@@ -13,7 +13,7 @@ module.exports = (appInfo, appConfig = {}) => {
    * built-in config
    * @type {Egg.EggAppConfig}
    **/
-  const config = exports = {};
+  const config = (exports = {});
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1637117105574_124';
@@ -49,6 +49,10 @@ module.exports = (appInfo, appConfig = {}) => {
         '.html': 'nunjucks',
       },
       defaultViewEngine: 'nunjucks',
+    },
+    news: {
+      serverUrl: 'https://hacker-news.firebaseio.com/v0',
+      pageSize: 20,
     },
   };
 
