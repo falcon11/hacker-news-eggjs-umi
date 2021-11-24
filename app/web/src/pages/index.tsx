@@ -65,9 +65,9 @@ IndexPage.getInitialProps = (async (ctx) => {
     const newsList = await service.news.getNewsList(query.page);
     return { newsList, pageSize };
   }
-  const newsList = await (
-    await fetcher.get('/api/news', { params: { page: query.page } })
-  ).data;
+  const newsList =
+    (await fetcher.get('/api/news', { params: { page: query.page } })).data ||
+    [];
   return { newsList, pageSize: 20 };
 }) as IGetInitialProps;
 
